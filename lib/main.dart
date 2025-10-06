@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 import 'package:mqtt_client/mqtt_server_client.dart';
@@ -59,12 +60,19 @@ class _MqttScreenState extends State<MqttScreen> {
 
     client = MqttServerClient(
         serverUrl, 'flutter_client_${DateTime.now().millisecondsSinceEpoch}');
-    client.port = int.tryParse(portStr ?? '') ?? 1883; // تنظیم پورت با مقدار پیش‌فرض
+    client.port =
+        int.tryParse(portStr ?? '') ?? 1883; // تنظیم پورت با مقدار پیش‌فرض
+    // client.port = 1883;
     client.keepAlivePeriod = 20;
     client.logging(on: false);
     client.onDisconnected = onDisconnected;
     client.onConnected = onConnected;
-    client.onSubscribed = (topic) => debugPrint('Subscribed to $topic');
+
+    client.onSubscribed = (topic) {
+      if (kDebugMode) {
+        print('Subscribed to $topic');
+      }
+    };
 
     client.connectionMessage = MqttConnectMessage()
         .withClientIdentifier('flutter_client')
@@ -74,7 +82,9 @@ class _MqttScreenState extends State<MqttScreen> {
     try {
       await client.connect(user, password);
     } catch (e) {
-      debugPrint('❌ Connection failed: $e');
+      if (kDebugMode) {
+        print('❌ Connection failed: $e');
+      }
       client.disconnect();
     }
   }
