@@ -60,7 +60,7 @@ This Flutter project demonstrates how to establish a **two-way communication** b
 * **Commissioned by:** Bahram Kit Co.
   Store: [bahramkit.com](https://www.bahramkit.com)
   Instagram: [@bahramkit](https://www.instagram.com/bahramkit/)
-  Tutorial for this project : [Tutorial](https://www.instagram.com/bahramkit/)
+  Tutorial : [Tutorial](https://www.bahramkit.com/%d8%ae%d8%a7%d9%86%d9%87-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-4-2-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84-%d9%88-%d8%af%d8%b1%db%8c%d8%a7%d9%81%d8%aa-%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%d8%a7%d8%aa-%d8%a7%d8%b2/)
 
 ---
 
@@ -124,6 +124,7 @@ This Flutter project demonstrates how to establish a **two-way communication** b
 * **سفارش داده شده توسط:** شرکت بهرام کیت
   [فروشگاه](https://www.bahramkit.com)
   [اینستاگرام](https://www.instagram.com/bahramkit/)
+    [آموزش پروژه](https://www.bahramkit.com/%d8%ae%d8%a7%d9%86%d9%87-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-4-2-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84-%d9%88-%d8%af%d8%b1%db%8c%d8%a7%d9%81%d8%aa-%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%d8%a7%d8%aa-%d8%a7%d8%b2/)
 
 ---
 
